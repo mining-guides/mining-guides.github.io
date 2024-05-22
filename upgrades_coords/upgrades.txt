@@ -1,0 +1,105 @@
+Mole > 1-3
+Great Explorer > 2
+Mole > 4-6
+Great Explorer > 3
+Powder Buff > 2
+Mole > 7-10
+Great Explorer > 4
+Powder Buff > 3
+Mole > 11-14
+Great Explorer > 5
+Powder Buff > 4
+Mole > 15-19
+Powder Buff > 5
+Great Explorer > 6
+Mole > 20-23
+Powder Buff > 6
+Mole  >   24
+Great Explorer > 7
+Mole > 25-27
+Powder Buff > 7
+Mole  >   28-29
+Great Explorer > 8
+Mole > 30-32
+Powder Buff > 8
+Mole  >   33-35
+Great Explorer > 9
+Mole  >   36
+Powder Buff > 9
+Mole  >   37-40
+Powder Buff > 10
+Mole > 41
+Great Explorer > 10
+Mole > 42-45
+Powder Buff > 11
+Mole > 46-47
+Great Explorer > 11
+Mole > 48-49
+Powder Buff > 12
+Mole > 50-54
+Powder Buff > 13
+Great Explorer > 12
+Mole > 55-58
+Powder Buff > 14
+Mole > 59-61
+Great Explorer > 13
+Mole > 62-63
+Powder Buff > 15
+Mole > 64-68
+Powder Buff > 16
+Great Explorer > 14
+Mole > 69-72
+Powder Buff > 17
+Mole > 73-76
+Great Explorer > 15
+Mole > 77
+Powder Buff > 18
+Mole > 78-81
+Powder Buff > 19
+Mole > 82-83
+Great Explorer > 16
+Mole > 84-86
+Powder Buff > 20
+Mole > 87-91
+Powder Buff > 21
+Great Explorer > 17
+Mole > 92-96
+Powder Buff > 22
+Mole > 97-100
+Great Explorer > 18
+Powder Buff > 23
+Mole > 101-105
+Powder Buff > 24
+Mole > 106-108
+Great Explorer > 19
+Mole > 109-110
+Powder Buff > 25
+Mole > 111-115
+Powder Buff > 26
+Mole > 116-117
+Great Explorer > 20
+Mole > 118-119
+Powder Buff > 27
+Mole > 120-124
+Powder Buff > 28
+Mole > 125-129
+Powder Buff > 29
+Mole > 130-134
+Powder Buff > 30
+Mole > 135-139
+Powder Buff > 31
+Mole > 140-144
+Powder Buff > 32
+Mole > 145-149
+Powder Buff > 33
+Mole > 150-154
+Powder Buff > 34
+Mole > 155-159
+Powder Buff > 35
+Mole > 160-164
+Powder Buff > 36
+Mole > 165-169
+Powder Buff > 37
+Mole > 170-171
+Powder Buff > 38-50
+Mole > 172-190
