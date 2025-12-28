@@ -14,6 +14,86 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8609716934702973"
      crossorigin="anonymous"></script>
 </head>
+    
+<script>
+    function toggleCalc() {
+    const calc = document.getElementById("calculator");
+    calc.style.display = calc.style.display === "none" ? "block" : "none";
+}
+
+/* Threshold tables */
+const thresholds = {
+    ruby: [
+        { ticks: 22, speed: 3067 },
+        { ticks: 21, speed: 3210 },
+        { ticks: 20, speed: 3366 },
+        { ticks: 19, speed: 3539 },
+        { ticks: 18, speed: 3730 },
+        { ticks: 17, speed: 3943 },
+        { ticks: 16, speed: 4182 },
+        { ticks: 15, speed: 4452 },
+        { ticks: 14, speed: 4759 },
+        { ticks: 13, speed: 5112 },
+        { ticks: 12, speed: 5520 },
+        { ticks: 11, speed: 6001 },
+        { ticks: 10, speed: 6572 },
+        { ticks: 9, speed: 7264 },
+        { ticks: 8, speed: 8118 },
+        { ticks: 7, speed: 9201 },
+        { ticks: 6, speed: 10616 },
+        { ticks: 5, speed: 12546 },
+        { ticks: 4, speed: 15334 }
+    ],
+    jade: [
+        { ticks: 22, speed: 4000 },
+        { ticks: 21, speed: 4187 },
+        { ticks: 20, speed: 4391 },
+        { ticks: 19, speed: 4616 },
+        { ticks: 18, speed: 4865 },
+        { ticks: 17, speed: 5143 },
+        { ticks: 16, speed: 5455 },
+        { ticks: 15, speed: 5807 },
+        { ticks: 14, speed: 6207 },
+        { ticks: 12, speed: 7200 },
+        { ticks: 11, speed: 7827 },
+        { ticks: 10, speed: 8572 },
+        { ticks: 9, speed: 9474 },
+        { ticks: 8, speed: 10589 },
+        { ticks: 7, speed: 12001 },
+        { ticks: 6, speed: 13847 },
+        { ticks: 5, speed: 16364 },
+        { ticks: 4, speed: 20000 }
+    ]
+};
+
+function calculate() {
+    const block = document.getElementById("block").value;
+    const speed = Number(document.getElementById("speed").value);
+    const result = document.getElementById("calc-result");
+
+    if (!speed || speed <= 0) {
+        result.textContent = "Enter a valid mining speed.";
+        return;
+    }
+
+    const table = thresholds[block];
+    let found = null;
+
+    for (let i = table.length - 1; i >= 0; i--) {
+        if (speed >= table[i].speed) {
+            found = table[i];
+            break;
+        }
+    }
+
+    if (found) {
+        result.textContent = `≈ ${found.ticks} ticks to break`;
+    } else {
+        result.textContent = "Too slow to reach any threshold.";
+    }
+}
+</script>
+    
 <body>
     <header>
         <h1>All gemstone Thresholds<a href="https://mining-guides.github.io" style="float:right;text-align:right;">Back to Mining Guides</a></h1>
@@ -23,6 +103,25 @@
         <a href="https://mining-guides-v2.vercel.app/" target="_blank" style="color: #0000ee; text-decoration: underline;">
             mining-guides-v2.vercel.app
         </a>
+    </div>
+    
+    <button class="calc-btn" onclick="toggleCalc()">Open Calculator</button>
+
+    <div id="calculator">
+        <label for="block">Block</label>
+        <select id="block">
+            <option value="ruby">Ruby</option>
+            <option value="jade">Jade / Amber / Sapphire</option>
+            <option value="topaz">Topaz / Opal</option>
+            <option value="jasper">Jasper</option>
+        </select>
+
+        <label for="speed">Mining Speed</label>
+        <input type="number" id="speed" placeholder="e.g. 4500">
+
+        <button class="calc-btn" onclick="calculate()">Calculate</button>
+
+        <div id="calc-result"></div>
     </div>
 
     <section id="thresholds">
@@ -201,6 +300,7 @@
     </section>
 </body>
 </html>
+
 
 
 
